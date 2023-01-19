@@ -1,0 +1,16 @@
+@mixin linkStyle($space, $color) {
+  margin: 0 $space;
+  color: $color;
+}
+
+footer {
+  padding: 3em;
+  margin-top: 2em;
+  background-color: $color-quaternary;
+  display: flex;
+  justify-content: center;
+  font-family: $font-primary;
+  a {
+    @include linkStyle(8px, $color-secondary);
+  }
+}
